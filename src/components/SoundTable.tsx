@@ -39,8 +39,8 @@ export const SoundTable = () => {
           <td>Plastic</td>
           <SoundCheckbox filePath={cream_plastic} />
           <SoundCheckbox filePath={honey_plastic} />
-          <td>{/* oil_plastic placeholder */}</td>
-          <td>{/* water_plastic placeholder */}</td>
+          <SoundCheckbox filePath={honey_plastic} /> {/* oil_plastic placeholder */}
+          <SoundCheckbox filePath={honey_plastic} /> {/* water_plastic placeholder */}
         </tr>
         <tr>
           <td>Water</td>
@@ -51,14 +51,14 @@ export const SoundTable = () => {
         </tr>
         <tr>
           <td>Stone</td>
-          <td>{/* cream_stone placeholder */}</td>
+          <SoundCheckbox filePath={honey_stone} /> {/* cream_stone placeholder */}
           <SoundCheckbox filePath={honey_stone} />
           <SoundCheckbox filePath={oil_stone} />
           <SoundCheckbox filePath={water_stone} />
         </tr>
         <tr>
           <td>Silicon</td>
-          <td>{/* cream_silicon placeholder */}</td>
+          <SoundCheckbox filePath={honey_silicon} /> {/* cream_silicon placeholder */}
           <SoundCheckbox filePath={honey_silicon} />
           <SoundCheckbox filePath={oil_silicon} />
           <SoundCheckbox filePath={water_silicon} />
@@ -66,9 +66,9 @@ export const SoundTable = () => {
         <tr>
           <td>Wood</td>
           <SoundCheckbox filePath={cream_wood} />
-          <td>{/* honey_wood placeholder */}</td>
-          <td>{/* oil_wood placeholder */}</td>
-          <td>{/* water_wood placeholder */}</td>
+          <SoundCheckbox filePath={cream_wood} /> {/* honey_wood placeholder */}
+          <SoundCheckbox filePath={cream_wood} /> {/* oil_wood placeholder */}
+          <SoundCheckbox filePath={cream_wood} /> {/* water_wood placeholder */}
         </tr>
       </tbody>
     </table>
