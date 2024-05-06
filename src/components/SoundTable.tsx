@@ -17,7 +17,11 @@ import water_silicon from "/sounds/water-silicon.mp3";
 import water_stone from "/sounds/water-stone.mp3";
 import water_water from "/sounds/water-water.mp3";
 
-export const SoundTable = () => {
+interface SoundTableProps {
+  indoor: boolean;
+}
+
+export const SoundTable = ({ indoor }: SoundTableProps) => {
   return (
     <table>
       <thead>
@@ -30,45 +34,45 @@ export const SoundTable = () => {
       <tbody>
         <tr>
           <td>Metal</td>
-          <SoundCheckbox filePath={cream_metal} />
-          <SoundCheckbox filePath={honey_metal} />
-          <SoundCheckbox filePath={oil_metal} />
-          <SoundCheckbox filePath={water_metal} />
+          <SoundCheckbox indoor={indoor} outdoorPath={cream_metal} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={honey_metal} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={oil_metal} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={water_metal} indoorPath={""} />
         </tr>
         <tr>
           <td>Plastic</td>
-          <SoundCheckbox filePath={cream_plastic} />
-          <SoundCheckbox filePath={honey_plastic} />
-          <SoundCheckbox filePath={honey_plastic} /> {/* oil_plastic placeholder */}
-          <SoundCheckbox filePath={honey_plastic} /> {/* water_plastic placeholder */}
+          <SoundCheckbox indoor={indoor} outdoorPath={cream_plastic} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={honey_plastic} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={honey_plastic} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={honey_plastic} indoorPath={""} />
         </tr>
         <tr>
           <td>Water</td>
-          <SoundCheckbox filePath={cream_water} />
-          <SoundCheckbox filePath={honey_water} />
-          <SoundCheckbox filePath={oil_water} />
-          <SoundCheckbox filePath={water_water} />
+          <SoundCheckbox indoor={indoor} outdoorPath={cream_water} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={honey_water} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={oil_water} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={water_water} indoorPath={""} />
         </tr>
         <tr>
           <td>Stone</td>
-          <SoundCheckbox filePath={honey_stone} /> {/* cream_stone placeholder */}
-          <SoundCheckbox filePath={honey_stone} />
-          <SoundCheckbox filePath={oil_stone} />
-          <SoundCheckbox filePath={water_stone} />
+          <SoundCheckbox indoor={indoor} outdoorPath={honey_stone} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={honey_stone} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={oil_stone} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={water_stone} indoorPath={""} />
         </tr>
         <tr>
           <td>Silicon</td>
-          <SoundCheckbox filePath={honey_silicon} /> {/* cream_silicon placeholder */}
-          <SoundCheckbox filePath={honey_silicon} />
-          <SoundCheckbox filePath={oil_silicon} />
-          <SoundCheckbox filePath={water_silicon} />
+          <SoundCheckbox indoor={indoor} outdoorPath={honey_silicon} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={honey_silicon} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={oil_silicon} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={water_silicon} indoorPath={""} />
         </tr>
         <tr>
           <td>Wood</td>
-          <SoundCheckbox filePath={cream_wood} />
-          <SoundCheckbox filePath={cream_wood} /> {/* honey_wood placeholder */}
-          <SoundCheckbox filePath={cream_wood} /> {/* oil_wood placeholder */}
-          <SoundCheckbox filePath={cream_wood} /> {/* water_wood placeholder */}
+          <SoundCheckbox indoor={indoor} outdoorPath={cream_wood} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={cream_wood} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={cream_wood} indoorPath={""} />
+          <SoundCheckbox indoor={indoor} outdoorPath={cream_wood} indoorPath={""} />
         </tr>
       </tbody>
     </table>

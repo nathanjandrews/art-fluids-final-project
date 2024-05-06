@@ -2,12 +2,14 @@ import { FC } from "react";
 import useSound from "use-sound";
 
 interface SoundCheckboxProps {
-  filePath: string;
+  indoor: boolean;
+  indoorPath: string;
+  outdoorPath: string;
 }
 
-export const SoundCheckbox: FC<SoundCheckboxProps> = ({ filePath }) => {
-  const [play, { pause, sound }] = useSound(filePath, { loop: true });
-  sound;
+export const SoundCheckbox: FC<SoundCheckboxProps> = ({ indoor, indoorPath, outdoorPath }) => {
+  const filePath = indoor ? indoorPath : outdoorPath;
+  const [play, { pause }] = useSound(filePath, { loop: true,  });
   return (
     <td>
       <input
