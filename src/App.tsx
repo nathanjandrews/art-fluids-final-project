@@ -5,8 +5,10 @@ function App() {
   return (
     <>
       <Videos />
-      <h1>Select Sounds, Make it Rain!</h1>
-      <SoundTable />
+      <div id="content-wrapper">
+        <h1>Select Sounds, Make it Rain!</h1>
+        <SoundTable />
+      </div>
     </>
   );
 }

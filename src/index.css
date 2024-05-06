@@ -59,3 +59,19 @@ th, td:nth-child(1) {
 input[type=checkbox] {
   transform: scale(1.5);
 }
+
+div > video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  z-index: -10;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+#content-wrapper {
+  background-color: rgba(36, 36, 36, 0.9);
+  padding: 2em;
+  border-radius: 2em;
+}
