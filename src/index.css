@@ -48,7 +48,7 @@ h1 {
 
 table {
   margin: auto;
-  width: 60vw;
+  width: 100%;
 }
 
 th, td:nth-child(1) {
