@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BrowserView } from "react-device-detect";
 import SoundTable from "./components/SoundTable";
 import Videos from "./components/Videos";
 
@@ -7,7 +8,9 @@ function App() {
 
   return (
     <>
-      <Videos />
+      <BrowserView>
+        <Videos />
+      </BrowserView>
       <div id="content-wrapper">
         <h1>Select Sounds, Make it Rain!</h1>
         <div id="switch-content">
