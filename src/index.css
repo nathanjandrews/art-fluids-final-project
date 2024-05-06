@@ -37,6 +37,10 @@ body {
   min-height: 100vh;
 }
 
+tr:nth-child(2n) {
+  background-color: hsl(0, 0%, 16%);
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -44,9 +48,14 @@ h1 {
 
 table {
   margin: auto;
-  background: red;
+  width: 60vw;
 }
 
 th, td:nth-child(1) {
   font-weight: bold;
+  font-size: 2em;
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
 }
